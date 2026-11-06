@@ -1,0 +1,3 @@
+export function limits(completed) { const stage=Math.floor(completed/5); return {stage,choose:Math.max(3,12-stage*1.2),write:Math.max(8,30-stage*2)}; }
+export function optionsFor(word,pool,random=Math.random) { const alternatives=[...new Set(pool.map(w=>w.pinyin))].filter(p=>p!==word.pinyin); for(let i=alternatives.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[alternatives[i],alternatives[j]]=[alternatives[j],alternatives[i]];} const out=[word.pinyin,...alternatives.slice(0,2)];return out.sort(()=>random()-.5); }
+export function normalize(text){return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[1-5\s]/g,'').replace(/ü/g,'u');}

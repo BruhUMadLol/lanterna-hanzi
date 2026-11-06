@@ -1,0 +1,8 @@
+{
+  "appId": "it.lanterna.hanzi",
+  "appName": "Lanterna Hanzi",
+  "webDir": "dist",
+  "android": {
+    "adjustMarginsForEdgeToEdge": "auto"
+  }
+}

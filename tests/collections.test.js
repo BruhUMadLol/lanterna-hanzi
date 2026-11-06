@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {collectionWords,matchesWord} from '../src/collections.js';import {normalize} from '../src/engine.js';
+test('collection search only returns words in the opened collection',()=>{const words=[{id:1,hanzi:'学习',pinyin:'xué xí',numeric:'xue2 xi2',meaning:'to study'},{id:2,hanzi:'学',pinyin:'xué',numeric:'xue2',meaning:'learn'}];assert.deepEqual(collectionWords({ids:[1]},words,'xue2xi2',normalize),[words[0]]);assert.deepEqual(collectionWords({ids:[]},words,'',normalize),[]);assert.deepEqual(collectionWords({ids:[1]},words,'missing',normalize),[]);});
+test('search cannot match across pinyin and numeric fields',()=>assert.equal(matchesWord({hanzi:'下雪',pinyin:'xià xuě',numeric:'xia4 xue3',meaning:'to snow'},'xue2xi2',normalize),false));

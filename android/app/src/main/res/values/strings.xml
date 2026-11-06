@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Lanterna Hanzi</string>
+    <string name="title_activity_main">Lanterna Hanzi</string>
+    <string name="package_name">it.lanterna.hanzi</string>
+    <string name="custom_url_scheme">it.lanterna.hanzi</string>
+</resources>

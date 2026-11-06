@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {t,setLanguage,initialLanguage} from '../src/i18n.js';
+test('saved language wins over device language, German devices default to German',()=>{assert.equal(initialLanguage('it','de-DE'),'it');assert.equal(initialLanguage('de','it-IT'),'de');assert.equal(initialLanguage(undefined,'de-AT'),'de');assert.equal(initialLanguage('unsupported','en-US'),'it');});
+test('interface switches languages without translating Chinese or personal collection names',()=>{setLanguage('de');assert.equal(t('Collezioni'),'Sammlungen');assert.equal(t('Riprova: segui il tratto illuminato.'),'Versuche es erneut: Folge dem hervorgehobenen Strich.');assert.equal(t('你好'),'你好');assert.equal(t('Il mio viaggio personale'),'Il mio viaggio personale');setLanguage('it');assert.equal(t('Collezioni'),'Collezioni');});

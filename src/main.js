@@ -1,5 +1,5 @@
 import {createStudySession,reconcileStudySession,markStudyCharacter,studyComplete,nextStudyIndex} from './study.js';
-import {reviewSession,freshReveal} from './flashcards.js';
+import {reviewSession,freshReveal,nextReviewRound} from './flashcards.js';
 import {flashcardMarkup} from './flashcard-view.js';
 import {practiceMarkup,practiceControlState} from './practice-view.js';
 import {icon} from './ui.js';
@@ -28,7 +28,7 @@ const deck=()=>saved.collections.find(c=>c.id===saved.selected)||saved.collectio
 const pool=()=>collectionWords(deck(),words,'',normalize).filter(w=>w.writable);
 function saveReview(){if(currentReview)saved.flashcardSessions={...saved.flashcardSessions,[currentReview.deckId]:currentReview};}
 function startFlashcards(){const items=collectionWords(deck(),words,'',normalize);if(!items.length){toast(t('Aggiungi parole alla collezione per iniziare.'));return;}const id=deck().id;const previous=saved.flashcardSessions&&Object.hasOwn(saved.flashcardSessions,id)?saved.flashcardSessions[id]:null;currentReview=reviewSession(previous,id,items.map(w=>w.id));currentReveal=freshReveal();saveReview();persist();navigate('flashcards');}
-function moveFlashcard(direction){if(direction<0){if(currentReview.index===0)return;currentReview.index--;}else if(currentReview.index<currentReview.ids.length-1)currentReview.index++;else currentReview=reviewSession(null,deck().id,collectionWords(deck(),words,'',normalize).map(w=>w.id));currentReveal=freshReveal();saveReview();persist();renderFlashcard();}
+function moveFlashcard(direction){if(direction<0){if(currentReview.index===0)return;currentReview.index--;}else if(currentReview.index<currentReview.ids.length-1)currentReview.index++;else currentReview=nextReviewRound(currentReview,deck().id,collectionWords(deck(),words,'',normalize).map(w=>w.id));currentReveal=freshReveal();saveReview();persist();renderFlashcard();}
 function renderFlashcard(){if(!currentReview){navigate('home');return;}const word=words.find(w=>w.id===currentReview.ids[currentReview.index]);if(!word){navigate('home');return;}app.classList.add('flashcard-open');$('#content').innerHTML=flashcardMarkup({word,session:currentReview,revealed:currentReveal,deckName:deck().name,esc});$('#back-review').onclick=()=>navigate('home');$('#review-audio').onclick=()=>speak(word);$('#review-previous').onclick=()=>moveFlashcard(-1);$('#review-next').onclick=()=>moveFlashcard(1);document.querySelectorAll('[data-reveal]').forEach(button=>button.onclick=()=>{const field=button.dataset.reveal;currentReveal[field]=!currentReveal[field];renderFlashcard();document.querySelector(`[data-reveal="${field}"]`).focus({preventScroll:true});});}
 function updateCollectionBar(){const bar=$('#collection-bar');if(!bar)return;bar.innerHTML=`<button class="active-deck-bar" id="active-deck"><span><small>${t("COLLEZIONE SELEZIONATA")}</small><strong>${esc(deck().name)}</strong></span><span>${deck().ids.length} ${t("parole")} <b>↗</b></span></button>`;$('#active-deck').onclick=()=>openCollection(deck().id);}
 function openCollection(id){openedCollection=id;collectionQuery='';collectionPage=0;navigate('collection-detail');}

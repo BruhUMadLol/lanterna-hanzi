@@ -9,7 +9,8 @@ Eine Android-App zum Lernen chinesischer Schriftzeichen und Wörter: mit Strichf
 
 ## Funktionen
 
-- **11.493 Wörter** aus einem HSK-2.0-/3.0-Datensatz und ergänzten A1-Lernwörtern; Strichdaten für **3.037 unterschiedliche Zeichen**.
+- **11.498 Wörter** aus einem HSK-2.0-/3.0-Datensatz und ergänzten A1-Lernwörtern; Strichdaten für **3.037 unterschiedliche Zeichen**.
+- **Lernkarten:** große chinesische Wörter, Navigation oberhalb der Karte und getrennt aufdeckbares Pinyin und Bedeutung. Ohne Timer, mit zufälliger Reihenfolge und gespeicherter Position pro Sammlung.
 - **Nachzeichnen:** Animation ansehen und die Zeichen mit Vorlage schreiben.
 - **Schreiben:** ohne Zeichenumriss üben; geprüft werden Strichfolge, Richtung und Position. In den normalen Übungen wird bei Fehlern der passende Strich gezeigt.
 - **Sammlungen:** Wörter suchen, hinzufügen, entfernen, anhören und als JSON sichern oder importieren.
@@ -29,7 +30,7 @@ Für beide Modi werden getrennte Bestleistungen gespeichert. Zum Spielen braucht
 
 ### A1 LehrBuch
 
-Die mitgelieferte Sammlung **A1 LehrBuch** enthält **74 Einträge**: 64 Wörter aus den bereitgestellten Vokabellisten sowie die Zahlen **一 二 三 四 五 六 七 八 九 十**. Diese Einträge haben deutsche und italienische Bedeutungen; die übrigen Wörterbuchdefinitionen sind überwiegend auf Englisch.
+Die mitgelieferte Sammlung **A1 LehrBuch** enthält **113 Einträge**: 103 Wörter aus den bereitgestellten Vokabellisten sowie die Zahlen **一 二 三 四 五 六 七 八 九 十**. Alle Einträge verwenden Kurzzeichen. Diese Einträge haben deutsche und italienische Bedeutungen; die übrigen Wörterbuchdefinitionen sind überwiegend auf Englisch.
 
 Die Lehrbuchfotos und darin abgebildeten Personen sind **nicht Bestandteil des Repositorys**. Die App führt kein automatisches Foto-OCR aus.
 

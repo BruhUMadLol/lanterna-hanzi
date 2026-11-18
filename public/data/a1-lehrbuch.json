@@ -894,5 +894,189 @@
     "meaning": "photograph; photo",
     "meaningDe": "Foto; Fotografie",
     "meaningIt": "foto; fotografia"
+  },
+  {
+    "id": 1000114,
+    "hanzi": "姓名",
+    "pinyin": "xìng míng",
+    "meaning": "full name",
+    "meaningDe": "Vor- und Nachname",
+    "meaningIt": "nome e cognome"
+  },
+  {
+    "id": 1000115,
+    "hanzi": "年龄",
+    "pinyin": "nián líng",
+    "meaning": "age",
+    "meaningDe": "Alter",
+    "meaningIt": "età"
+  },
+  {
+    "id": 1000116,
+    "hanzi": "出生地",
+    "pinyin": "chū shēng dì",
+    "meaning": "place of birth",
+    "meaningDe": "Geburtsort",
+    "meaningIt": "luogo di nascita"
+  },
+  {
+    "id": 1000117,
+    "hanzi": "国籍",
+    "pinyin": "guó jí",
+    "meaning": "nationality",
+    "meaningDe": "Nationalität; Staatsangehörigkeit",
+    "meaningIt": "nazionalità"
+  },
+  {
+    "id": 1000118,
+    "hanzi": "电子邮箱",
+    "pinyin": "diàn zǐ yóu xiāng",
+    "meaning": "email address; electronic mailbox",
+    "meaningDe": "E-Mail-Adresse; elektronisches Postfach",
+    "meaningIt": "indirizzo email; casella di posta elettronica"
+  },
+  {
+    "id": 1000119,
+    "hanzi": "动物",
+    "pinyin": "dòng wù",
+    "meaning": "animal",
+    "meaningDe": "Tier",
+    "meaningIt": "animale"
+  },
+  {
+    "id": 1000120,
+    "hanzi": "熊猫",
+    "pinyin": "xióng māo",
+    "meaning": "giant panda",
+    "meaningDe": "Großer Panda",
+    "meaningIt": "panda gigante"
+  },
+  {
+    "id": 1000121,
+    "hanzi": "可爱",
+    "pinyin": "kě ài",
+    "meaning": "cute; lovable",
+    "meaningDe": "niedlich; liebenswert",
+    "meaningIt": "carino; adorabile"
+  },
+  {
+    "id": 1000122,
+    "hanzi": "演员",
+    "pinyin": "yǎn yuán",
+    "meaning": "actor; actress",
+    "meaningDe": "Schauspieler; Schauspielerin",
+    "meaningIt": "attore; attrice"
+  },
+  {
+    "id": 1000123,
+    "hanzi": "谁",
+    "pinyin": "shéi",
+    "meaning": "who; whom",
+    "meaningDe": "wer; wem; wen",
+    "meaningIt": "chi"
+  },
+  {
+    "id": 1000124,
+    "hanzi": "上海",
+    "pinyin": "Shàng hǎi",
+    "meaning": "Shanghai",
+    "meaningDe": "Shanghai",
+    "meaningIt": "Shanghai"
+  },
+  {
+    "id": 1000125,
+    "hanzi": "现在",
+    "pinyin": "xiàn zài",
+    "meaning": "now; at present",
+    "meaningDe": "jetzt; gegenwärtig",
+    "meaningIt": "adesso; ora"
+  },
+  {
+    "id": 1000126,
+    "hanzi": "多大",
+    "pinyin": "duō dà",
+    "meaning": "how old; how big",
+    "meaningDe": "wie alt; wie groß",
+    "meaningIt": "quanti anni; quanto grande"
+  },
+  {
+    "id": 1000127,
+    "hanzi": "岁",
+    "pinyin": "suì",
+    "meaning": "years old (age)",
+    "meaningDe": "Jahre alt (Altersangabe)",
+    "meaningIt": "anni (per indicare l’età)"
+  },
+  {
+    "id": 1000128,
+    "hanzi": "知道",
+    "pinyin": "zhī dao",
+    "meaning": "to know; to be aware of",
+    "meaningDe": "wissen; Bescheid wissen",
+    "meaningIt": "sapere; essere a conoscenza"
+  },
+  {
+    "id": 1000129,
+    "hanzi": "真",
+    "pinyin": "zhēn",
+    "meaning": "really; truly; real",
+    "meaningDe": "wirklich; echt",
+    "meaningIt": "davvero; veramente; vero"
+  },
+  {
+    "id": 1000130,
+    "hanzi": "高",
+    "pinyin": "gāo",
+    "meaning": "tall; high",
+    "meaningDe": "groß; hoch",
+    "meaningIt": "alto"
+  },
+  {
+    "id": 1000131,
+    "hanzi": "帅",
+    "pinyin": "shuài",
+    "meaning": "handsome; good-looking",
+    "meaningDe": "gutaussehend",
+    "meaningIt": "bello; di bell’aspetto"
+  },
+  {
+    "id": 1000132,
+    "hanzi": "酷",
+    "pinyin": "kù",
+    "meaning": "cool",
+    "meaningDe": "cool",
+    "meaningIt": "forte; alla moda"
+  },
+  {
+    "id": 1000133,
+    "hanzi": "最",
+    "pinyin": "zuì",
+    "meaning": "most; -est (superlative)",
+    "meaningDe": "am meisten; zur Superlativbildung",
+    "meaningIt": "il più; per formare il superlativo"
+  },
+  {
+    "id": 1000134,
+    "hanzi": "喜欢",
+    "pinyin": "xǐ huan",
+    "meaning": "to like; to be fond of",
+    "meaningDe": "mögen; gern haben",
+    "meaningIt": "piacere; apprezzare"
+  },
+  {
+    "id": 1000135,
+    "hanzi": "篮球",
+    "pinyin": "lán qiú",
+    "meaning": "basketball",
+    "meaningDe": "Basketball",
+    "meaningIt": "pallacanestro; basket"
+  },
+  {
+    "id": 1000136,
+    "hanzi": "运动员",
+    "pinyin": "yùn dòng yuán",
+    "meaning": "athlete; sports player",
+    "meaningDe": "Sportler; Sportlerin",
+    "meaningIt": "atleta; sportivo; sportiva"
   }
 ]
